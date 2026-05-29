@@ -1,0 +1,134 @@
+/* Base styles to ensure proper sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #030712; /* Dark background for the whole page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Main Container */
+.checkout-container {
+  width: 100%;
+  max-width: 28rem; /* 448px */
+  background-color: #111827; /* gray-900 */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid #1f2937; /* gray-800 */
+}
+
+.checkout-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Groups & Labels */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d1d5db; /* gray-300 */
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs and Selects */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #1f2937; /* gray-800 */
+  border: 1px solid #374151; /* gray-700 */
+  color: #ffffff;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-group input::placeholder {
+  color: #6b7280;
+}
+
+/* Focus states for inputs */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ef4444; /* red-500 */
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+/* Character Counter */
+.char-counter {
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.char-counter span {
+  font-size: 0.75rem;
+  color: #6b7280; /* gray-500 */
+}
+
+/* Price Section */
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #1f2937; /* gray-800 */
+}
+
+.price-label {
+  color: #9ca3af; /* gray-400 */
+  font-weight: 500;
+}
+
+.price-total {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.currency {
+  font-size: 1.125rem;
+  color: #6b7280; /* gray-500 */
+  font-weight: normal;
+}
+
+/* Giant Red Button */
+.btn-submit {
+  width: 100%;
+  background-color: #dc2626; /* red-600 */
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit:hover {
+  background-color: #b91c1c; /* red-700 */
+  box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.3);
+}

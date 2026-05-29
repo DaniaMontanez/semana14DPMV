@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="checkout-container">
+    <h2 class="checkout-title">Checkout</h2>
+
+    <form class="checkout-form" onsubmit="event.preventDefault();">
+      
+      <div class="form-group">
+        <label for="nombreGafete">Nombre en el Gafete VIP</label>
+        <input type="text" id="nombreGafete">
+        <div class="char-counter">
+          <span>0 / 20 caracteres</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="zona">Zona</label>
+        <select id="zona">
+          <option value="" disabled selected>Selecciona tu zona</option>
+          <option value="general">General</option>
+          <option value="gradas">Gradas</option>
+          <option value="snakepit">Gradas VIP</option>
+          <option value="gradas">Pit</option>
+          <option value="snakepit">Pit VIP</option>
+        </select>
+      </div>
+
+      <div class="price-container">
+        <span class="price-label">Total a pagar:</span>
+        <span class="price-total">$0.00 <span class="currency">MXN</span></span>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        Confirmar Compra
+      </button>
+      
+    </form>
+  </div>
+
+</body>
+</html>

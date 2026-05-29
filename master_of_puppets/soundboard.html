@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 min-h-screen flex items-center justify-center p-6 font-sans">
+
+  <div class="w-full max-w-md bg-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-800">
+    
+    <div id="pantalla" class="bg-black text-emerald-400 font-mono text-center p-4 rounded-lg mb-8 border border-gray-800 text-lg shadow-inner">
+      Esperando acción...
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-8">
+      <button class="sound-btn bg-gray-800 hover:bg-gray-700 text-white font-bold py-6 rounded-xl border border-gray-700 transition-colors" data-sound="Guitar Riff">
+        Kirk
+      </button>
+      <button class="sound-btn bg-gray-800 hover:bg-gray-700 text-white font-bold py-6 rounded-xl border border-gray-700 transition-colors" data-sound="Double drum line">
+        Lars
+      </button>
+      <button class="sound-btn bg-gray-800 hover:bg-gray-700 text-white font-bold py-6 rounded-xl border border-gray-700 transition-colors" data-sound="Bass Riff">
+        Rob
+      </button>
+      <button class="sound-btn bg-gray-800 hover:bg-gray-700 text-white font-bold py-6 rounded-xl border border-gray-700 transition-colors" data-sound="UOU-WOAAHHH">
+        James
+      </button>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+      <div class="flex justify-between items-center mb-4">
+        <label for="distorsion" class="font-bold text-gray-300">Nivel de Distorsión</label>
+        <span id="valorDistorsion" class="text-2xl font-black text-white">0%</span>
+      </div>
+      <input 
+        type="range" id="distorsion" min="0" max="100" value="0" class="w-full accent-red-500 cursor-pointer">
+    </div>
+    
+<script src="script2.js"></script>
+  </div>
+</body>
+</html>
